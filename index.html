@@ -15,11 +15,12 @@
   
   <title>My link-in-bio</title>
   <style>
-    /* wrap each element in a red box to see where things line up */
+    /* debugging border wraps each element in a red box to see where things line up
     * {
       border: 1px red dashed;
     }
-    
+    */
+
     html {
       /* makes the body fill the height of the window */
       min-height: 100%;
@@ -61,7 +62,13 @@
       /* turn on flex & centers text vertically */
       display: flex;
       align-items: center;
+      /* round the edges */
       border-radius: 1000px;
+      padding: 5px;
+      /* adds padding to the right to perfectly centers the icon + text */
+      padding-right: 53px;
+      /* adds shadow */
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
     }
 
     .main-container {
@@ -113,13 +120,13 @@
         <!-- target="_blank" makes the browser opens a new page -->
         <a href="https://github.com/waikyjung/" target="_blank">
           <!-- the <i> element activates webicons from https://fontawesome.com/search -->
-          <i class="fa-brands fa-github"></i> GitHub
+          <i class="fa-brands fa-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/waiky-jung" target="_blank">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
+          <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://www.instagram.com/wakegames0" target="_blank">
-          <i class="fa-brands fa-instagram"></i> Instagram
+          <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
       
