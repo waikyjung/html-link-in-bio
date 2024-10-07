@@ -18,10 +18,12 @@
       padding: 40px 0;
       background: linear-gradient(90deg, #000000, #0e131d, #142032, #172c4a, #183963, #17477c, #115597, #0264b3);
       color: rgba(255, 255, 255, 1.0);
+      font-family: "Impact";
     }
 
     a {
       color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
     }
 
     .avatar-image {
@@ -41,6 +43,8 @@
     .item {
       background-color: darkcyan;
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
     }
 
     .main-container {
@@ -50,14 +54,26 @@
 
     .image-row {
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .name-row {
       margin-bottom: 30px;
+      text-align: center;
+      font-family: "Georgia";
+      font-size: 24px;
+      font-weight: 900;
     }
 
     .social-icons-row {
       margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -88,35 +104,35 @@
       <div class="links-row">
         <div class="item">
           <img class="thumbnail" src="/images/codecademy.png" width="100" height=auto>
-          <a target="_blank" href="https://www.codecademy.com/profiles/wakecode">
+          <a class="link-text" target="_blank" href="https://www.codecademy.com/profiles/wakecode">
             Codecademy
           </a>
         </div>
 
         <div class="item">
           <img class="thumbnail" src="/images/lion.png" width="100" height=auto>
-          <a target="_blank" href="https://www.brookfieldzoo.org/">
+          <a class="link-text" target="_blank" href="https://www.brookfieldzoo.org/">
             Brookfield Zoo
           </a>
         </div>
 
         <div class="item">
           <img class="thumbnail" src="/images/chicago-chinatown.png" width="100" height=auto>
-          <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g35805-d169628-Reviews-Chicago_Chinatown-Chicago_Illinois.html">
+          <a class="link-text" target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g35805-d169628-Reviews-Chicago_Chinatown-Chicago_Illinois.html">
             Tripadvisor - Chicago Chinatown
           </a>
         </div>
 
         <div class="item">
           <img class="thumbnail" src="/images/chicago-bulls.png" width="100" height=auto>
-          <a target="_blank" href="https://www.nba.com/bulls/">
+          <a class="link-text" target="_blank" href="https://www.nba.com/bulls/">
             NBA.com - Chicago Bulls
           </a>
         </div>
 
         <div class="item">
           <img class="thumbnail" src="/images/ramen.png" width="100" height=auto>
-          <a target="_blank" href="https://www.hingkeechinatown.com/">
+          <a class="link-text" target="_blank" href="https://www.hingkeechinatown.com/">
             Hing Kee Restaurant
           </a>
         </div>
