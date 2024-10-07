@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- expands characters, though not really necessary -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  
+  <!-- webfont from https://fonts.google.com/ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- activate webicons from https://fontawesome.com/search -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  
   <title>My link-in-bio</title>
   <style>
+    /* wrap each element in a red box to see where things line up */
     * {
       border: 1px red dashed;
     }
     
     html {
+      /* makes the body fill the height of the window */
       min-height: 100%;
     }
 
     body {
+      /* makes the body fill the height of the window */
       min-height: 100%;
       padding: 40px 0;
+      /* gradient background from  https://www.learnui.design/tools/gradient-generator.html */
       background: linear-gradient(90deg, #000000, #0e131d, #142032, #172c4a, #183963, #17477c, #115597, #0264b3);
       color: rgba(255, 255, 255, 1.0);
       font-family: "Raleway";
@@ -30,6 +40,7 @@
       text-decoration: none;
     }
 
+    /* border-radius & object-fit makes the image into a circle */
     .avatar-image {
       width: 128px;
       height: 128px;
@@ -47,12 +58,16 @@
     .item {
       background-color: darkcyan;
       margin-bottom: 20px;
+      /* turn on flex & centers text vertically */
       display: flex;
       align-items: center;
+      border-radius: 1000px;
     }
 
     .main-container {
+      /* max-width prevents overflow */
       max-width: 640px;
+      /* centers */
       margin: 0 auto;
     }
 
@@ -71,11 +86,13 @@
     .social-icons-row {
       margin-bottom: 30px;
       display: flex;
+      /* put space between each social media item */
       justify-content: space-around;
     }
 
     .link-text {
       text-align: center;
+      /* centers text even if wrapped around a border */
       flex-grow: 1;
     }
   </style>
@@ -93,48 +110,50 @@
       </div>
       
       <div class="social-icons-row">
+        <!-- target="_blank" makes the browser opens a new page -->
         <a href="https://github.com/waikyjung/" target="_blank">
-          <i class="fa-brands fa-github"></i>GitHub
+          <!-- the <i> element activates webicons from https://fontawesome.com/search -->
+          <i class="fa-brands fa-github"></i> GitHub
         </a>
         <a href="https://www.linkedin.com/in/waiky-jung" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>LinkedIn
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
         </a>
         <a href="https://www.instagram.com/wakegames0" target="_blank">
-          <i class="fa-brands fa-instagram"></i>Instagram
+          <i class="fa-brands fa-instagram"></i> Instagram
         </a>
       </div>
       
       <div class="links-row">
         <div class="item">
-          <img class="thumbnail" src="/images/codecademy.png" width="100" height=auto>
+          <img class="thumbnail" src="/images/codecademy.png">
           <a class="link-text" target="_blank" href="https://www.codecademy.com/profiles/wakecode">
             Codecademy
           </a>
         </div>
 
         <div class="item">
-          <img class="thumbnail" src="/images/lion.png" width="100" height=auto>
+          <img class="thumbnail" src="/images/lion.png">
           <a class="link-text" target="_blank" href="https://www.brookfieldzoo.org/">
             Brookfield Zoo
           </a>
         </div>
 
         <div class="item">
-          <img class="thumbnail" src="/images/chicago-chinatown.png" width="100" height=auto>
+          <img class="thumbnail" src="/images/chicago-chinatown.png">
           <a class="link-text" target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g35805-d169628-Reviews-Chicago_Chinatown-Chicago_Illinois.html">
             Tripadvisor - Chicago Chinatown
           </a>
         </div>
 
         <div class="item">
-          <img class="thumbnail" src="/images/chicago-bulls.png" width="100" height=auto>
+          <img class="thumbnail" src="/images/chicago-bulls.png">
           <a class="link-text" target="_blank" href="https://www.nba.com/bulls/">
             NBA.com - Chicago Bulls
           </a>
         </div>
 
         <div class="item">
-          <img class="thumbnail" src="/images/ramen.png" width="100" height=auto>
+          <img class="thumbnail" src="/images/ramen.png">
           <a class="link-text" target="_blank" href="https://www.hingkeechinatown.com/">
             Hing Kee Restaurant
           </a>
