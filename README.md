@@ -1,3 +1,4 @@
-# static-html-template
+# html-link-in-bio
 
-Use this template to create static HTML websites and deploy them on Render.
+## Description
+This is a static HTML website and was deployed in Render.
